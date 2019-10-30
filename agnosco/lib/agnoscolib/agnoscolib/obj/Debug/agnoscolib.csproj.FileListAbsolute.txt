@@ -1,0 +1,8 @@
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\obj\Debug\agnoscolib.csproj.CoreCompileInputs.cache
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\bin\Debug\agnoscolib.dll
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\bin\Debug\agnoscolib.pdb
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\obj\Debug\agnoscolib.dll
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\obj\Debug\agnoscolib.pdb
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\bin\Debug\Newtonsoft.Json.dll
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\bin\Debug\Newtonsoft.Json.xml
+C:\Hackathon\agnosco\lib\agnoscolib\agnoscolib\obj\Debug\agnoscolib.csproj.CopyComplete

@@ -1,0 +1,20 @@
+{
+  "mydata":[
+
+  {
+    "Identifier": "1",
+    "Label": "pratik",
+    "Categories": "Standard",
+    "UpdatedBy": "lno",
+    "UpdatedAt": "01-02-2013"
+
+  },
+  {
+    "Identifier": "2",
+    "Label": "2013",
+    "Categories": "Standard",
+    "UpdatedBy": "lno",
+    "UpdatedAt": "01-02-2013"
+  }
+ ]
+}

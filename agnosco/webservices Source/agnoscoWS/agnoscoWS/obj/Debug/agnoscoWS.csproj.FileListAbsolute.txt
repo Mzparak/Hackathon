@@ -1,0 +1,21 @@
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.csproj.CoreCompileInputs.cache
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\agnoscoWS.dll
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\agnoscoWS.pdb
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\agnoscolib.dll
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\Newtonsoft.Json.dll
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\agnoscolib.pdb
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\bin\Debug\Newtonsoft.Json.xml
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.csproj.CopyComplete
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.dll
+C:\Hackathon\agnosco\webservices\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.pdb
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\agnoscoWS.dll
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\agnoscoWS.pdb
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\agnoscolib.dll
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\Newtonsoft.Json.dll
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\agnoscolib.pdb
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\bin\Debug\Newtonsoft.Json.xml
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.csproj.CoreCompileInputs.cache
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.csproj.CopyComplete
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.dll
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.pdb
+C:\Hackathon\agnosco\webservices Source\agnoscoWS\agnoscoWS\obj\Debug\agnoscoWS.csprojAssemblyReference.cache

@@ -1,0 +1,15 @@
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\AgnoscoWS.dll
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\AgnoscoWS.pdb
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\AgnoscoLib.dll
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\Newtonsoft.Json.dll
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\AgnoscoLib.pdb
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\bin\Debug\Newtonsoft.Json.xml
+C:\Hackathon\agnosco\WS\agnosco\bin\AgnoscoWS.dll
+C:\Hackathon\agnosco\WS\agnosco\bin\AgnoscoWS.pdb
+C:\Hackathon\Hol_Agnosco\AgnoscoRestAPI\bin\AgnoscoWS.dll
+C:\Hackathon\Hol_Agnosco\AgnoscoRestAPI\bin\AgnoscoWS.pdb
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\obj\Debug\AgnoscoWS.csprojAssemblyReference.cache
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\obj\Debug\AgnoscoWS.csproj.CoreCompileInputs.cache
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\obj\Debug\AgnoscoWS.csproj.CopyComplete
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\obj\Debug\AgnoscoWS.dll
+C:\Hackathon\Hol_Agnosco\AgnoscoWS\obj\Debug\AgnoscoWS.pdb

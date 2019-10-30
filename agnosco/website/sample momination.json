@@ -1,0 +1,28 @@
+{
+"Nomination" : 
+{
+"userId":"mparak",
+"jobTitleName":"Developer",
+"firstName":"Mohammed",
+"lastName":"Parak",
+"preferredFullName":"Mohammed Parak",
+"employeeCode":"Holy1",
+"region":"Gauteng Parktown",
+"phoneNumber":"011 374 2266",
+"emailAddress":"mzparak@hollard.co.za",
+"values":
+	[
+		{
+			"value":"Growth",
+			"Rating":"3",
+			"Reason":"He helps the Org Grow"
+		},
+		{
+			"value":"Enduring",
+			"Rating":"3",
+			"Reason":"He endure the hardship"
+		}
+	]
+}
+
+}

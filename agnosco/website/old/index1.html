@@ -1,0 +1,1100 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Appreciation Portal
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+    <!-- <link href="assets/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+
+   
+
+    <style>
+        .nav-tabs {
+            border-bottom: 2px solid #DDD;
+        }
+
+            .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+                border-width: 0;
+            }
+
+            .nav-tabs > li > a {
+                border: none;
+                color: #666;
+            }
+
+                .nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+                    border: none;
+                    color: #4285F4 !important;
+                    background: transparent;
+                }
+
+                .nav-tabs > li > a::after {
+                    content: "";
+                    background: #4285F4;
+                    height: 2px;
+                    position: absolute;
+                    width: 100%;
+                    left: 0px;
+                    bottom: -1px;
+                    transition: all 250ms ease 0s;
+                    transform: scale(0);
+                }
+
+            .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+                transform: scale(1);
+            }
+
+        .tab-nav > li > a::after {
+            background: #21527d none repeat scroll 0% 0%;
+            color: #fff;
+        }
+
+        .tab-pane {
+            padding: 15px 0;
+        }
+
+        .tab-content {
+            padding: 20px
+        }
+
+        .card {
+            background: #FFF none repeat scroll 0% 0%;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        body {
+            background: #EDECEC;
+            padding: 50px
+        }
+      
+    </style>
+</head>
+
+<body class="">
+    <!-- Extra details for Live View on GitHub Pages -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper ">
+        <!-- MZ parak Change this backgroud image to a hollard image -->
+        <div class="sidebar" data-color="purple" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+
+            <div class="logo">
+                <i class="far fa-star"></i> Appreciation Portal
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item active  ">
+                        <a class="nav-link" href="./dashboard.html">
+                            <i class="material-icons">dashboard</i>
+                            <p>Leader Board</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./user.html">
+                            <i class="material-icons">person</i>
+                            <p>Nominate A Hollardite</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <a class="navbar-brand" href="#pablo">Leader Board</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <form class="navbar-form">
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                    <i class="material-icons">search</i>
+                                    <div class="ripple-container"></div>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="material-icons">dashboard</i>
+                                    <p class="d-lg-none d-md-block">
+                                        Stats
+                                    </p>
+                                </a>
+                            </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">4</span>
+                                    <p class="d-lg-none d-md-block">
+                                        Notifications
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Your Notification Of Mohammed Parak Was Succesfully Added</a>
+                                    <a class="dropdown-item" href="#">You earned 100 points for nominating a hollodite</a>
+                                    <a class="dropdown-item" href="#">Your Notification Of Kaironn Akoo Was Succesfully Added</a>
+                                    <a class="dropdown-item" href="#">You earned 100 points for nominating a hollodite</a>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="material-icons">person</i>
+                                    <p class="d-lg-none d-md-block">
+                                        Account
+                                    </p>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <!-- Leader board table section -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-primary">
+                                    <h4 class="card-title ">Real Time Hollardites Leader Board Stats</h4>
+                                    <p class="card-category">Keeping Appreciation Real</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="myTable" class="table">
+                                            <thead class=" text-primary">
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Position
+                                            </th>
+                                            <th>
+                                                Department
+                                            </th>
+                                            <th>
+                                                Age
+                                            </th>
+                                            <th>
+                                                Ranking
+                                            </th>
+                                            </thead>
+                                            <tbody id="leaderTbody">
+                                                <tr>
+                                                    <td>Mohammed Parak</td>
+                                                    <td>Claim Negotiater</td>
+                                                    <td>Jhb Claim Hub</td>
+                                                    <td>35</td>
+                                                    <td class="text-primary">500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kairoon Akoo</td>
+                                                    <td>Claim Negotiater</td>
+                                                    <td>Jhb Claim Hub</td>
+                                                    <td>51</td>
+                                                    <td class="text-primary">200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lama Halwa</td>
+                                                    <td>Policy Underwriter Marine</td>
+                                                    <td>Jhb Polcy Marine</td>
+                                                    <td>46</td>
+                                                    <td class="text-primary">2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Grant Closter</td>
+                                                    <td>IT Software Dev</td>
+                                                    <td>Ekundu Dev IT Insure</td>
+                                                    <td>25</td>
+                                                    <td class="text-primary">500</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-tabs card-header-primary">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                            <span class="nav-tabs-title">Tasks:</span>
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#profile" data-toggle="tab" id="bugTab">
+                                                        <i class="material-icons">bug_report</i> Bugs
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#messages" data-toggle="tab">
+                                                        <i class="material-icons">code</i> Website
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#settings" data-toggle="tab">
+                                                        <i class="material-icons">cloud</i> Server
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="profile">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="">
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="">
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                                        </td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="messages">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                                        </td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="">
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="settings">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="">
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                                        </td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                                    <span class="form-check-sign">
+                                                                        <span class="check"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+            <span class="nav-tabs-title">Tasks:</span>
+            <ul class="nav nav-tabs" data-tabs="tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#profile" data-toggle="tab">
+                        <i class="material-icons">bug_report</i> Bugs
+                        <div class="ripple-container"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#messages" data-toggle="tab">
+                        <i class="material-icons">code</i> Website
+                        <div class="ripple-container"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#settings" data-toggle="tab">
+                        <i class="material-icons">cloud</i> Server
+                        <div class="ripple-container"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>-->
+                    </div>
+                             
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                        <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="settings">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="float-left">
+                        <ul>
+                            <!--<h6> Appreciation Portal 2018</h6>-->
+                            <!--<li>
+                                <a href="">
+                                    About Us
+                                </a>
+                            </li>-->
+
+                        </ul>
+                    </nav>
+                    <div class="copyright float-right">
+
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, made with <i class="material-icons">favorite</i> by Hollardites For Hollardites
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!--   Core JS Files   -->
+    <script src="./assets/jQuery-3.3.1/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./assets/jQuery-3.3.1/jquery-3.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-colvis-1.3.1/b-flash-1.3.1/b-html5-1.3.1/b-print-1.3.1/cr-1.3.3/fc-3.2.2/fh-3.1.2/kt-2.2.1/r-2.1.1/rg-1.0.0/rr-1.2.0/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+    <script src="./assets/DataTables-1.10.18/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    <!-- Chartist JS -->
+    <script src="./assets/js/plugins/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="./assets/demo/demo.js"></script>
+    <!-- Sharrre libray -->
+    <script src="./assets/demo/jquery.sharrre.js"></script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('#facebook').sharrre({
+                share: {
+                    facebook: true
+                },
+                enableHover: false,
+                enableTracking: false,
+                enableCounter: false,
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('facebook');
+                },
+                template: '<i class="fab fa-facebook-f"></i> Facebook',
+                url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+            });
+
+            $('#google').sharrre({
+                share: {
+                    googlePlus: true
+                },
+                enableCounter: false,
+                enableHover: false,
+                enableTracking: true,
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('googlePlus');
+                },
+                template: '<i class="fab fa-google-plus"></i> Google',
+                url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+            });
+
+            $('#twitter').sharrre({
+                share: {
+                    twitter: true
+                },
+                enableHover: false,
+                enableTracking: false,
+                enableCounter: false,
+                buttons: {
+                    twitter: {
+                        via: 'CreativeTim'
+                    }
+                },
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('twitter');
+                },
+                template: '<i class="fab fa-twitter"></i> Twitter',
+                url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+            });
+
+
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-46172202-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+            // Facebook Pixel Code Don't Delete
+            ! function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window,
+                document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+            try {
+                fbq('init', '111649226022273');
+                fbq('track', "PageView");
+
+            } catch (err) {
+                console.log('Facebook Track Error:', err);
+            }
+
+        });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
+    </noscript>
+    <script>
+        $(document).ready(function () {
+            $().ready(function () {
+                $sidebar = $('.sidebar');
+                $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+                $full_page = $('.full-page');
+
+                $sidebar_responsive = $('body > .navbar-collapse');
+                sidebar_mini_active = true;
+
+                window_width = $(window).width();
+
+                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+                // if( window_width > 767 && fixed_plugin_open == 'Dashboard' ){
+                //     if($('.fixed-plugin .dropdown').hasClass('show-dropdown')){
+                //         $('.fixed-plugin .dropdown').addClass('show');
+                //     }
+                //
+                // }
+
+                $('.fixed-plugin a').click(function (event) {
+                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+                    if ($(this).hasClass('switch-trigger')) {
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else if (window.event) {
+                            window.event.cancelBubble = true;
+                        }
+                    }
+                });
+
+                $('.fixed-plugin .background-color span').click(function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data-color', new_color);
+                    }
+
+                    if ($full_page.length != 0) {
+                        $full_page.attr('filter-color', new_color);
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.attr('data-color', new_color);
+                    }
+                });
+
+                $('.fixed-plugin .img-holder').click(function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $(this).parent('li').siblings().removeClass('active');
+                    $(this).parent('li').addClass('active');
+
+
+                    var new_image = $(this).find("img").attr('src');
+
+                    if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        $sidebar_img_container.fadeOut('fast', function () {
+                            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                            $sidebar_img_container.fadeIn('fast');
+                        });
+                    }
+
+                    if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $full_page_background.fadeOut('fast', function () {
+                            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                            $full_page_background.fadeIn('fast');
+                        });
+                    }
+
+                    if ($('.switch-sidebar-image input:checked').length == 0) {
+                        var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+                        var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+                    }
+                });
+
+                $('.switch-sidebar-image input').on("switchChange.bootstrapSwitch", function () {
+                    $full_page_background = $('.full-page-background');
+
+                    $input = $(this);
+
+                    if ($input.is(':checked')) {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar_img_container.fadeIn('fast');
+                            $sidebar.attr('data-image', '#');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page_background.fadeIn('fast');
+                            $full_page.attr('data-image', '#');
+                        }
+
+                        background_image = true;
+                    } else {
+                        if ($sidebar_img_container.length != 0) {
+                            $sidebar.removeAttr('data-image');
+                            $sidebar_img_container.fadeOut('fast');
+                        }
+
+                        if ($full_page_background.length != 0) {
+                            $full_page.removeAttr('data-image', '#');
+                            $full_page_background.fadeOut('fast');
+                        }
+
+                        background_image = false;
+                    }
+                });
+
+                $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function () {
+                    var $btn = $(this);
+
+                    if (sidebar_mini_active == true) {
+                        $('body').removeClass('sidebar-mini');
+                        sidebar_mini_active = false;
+                        materialDashboard.showSidebarMessage('Sidebar mini deactivated...');
+                    } else {
+                        $('body').addClass('sidebar-mini');
+                        sidebar_mini_active = true;
+                        materialDashboard.showSidebarMessage('Sidebar mini activated...');
+                    }
+
+                    // we simulate the window Resize so the charts will get updated in realtime.
+                    var simulateWindowResize = setInterval(function () {
+                        window.dispatchEvent(new Event('resize'));
+                    }, 180);
+
+                    // we stop the simulation of Window Resize after the animations are completed
+                    setTimeout(function () {
+                        clearInterval(simulateWindowResize);
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Javascript method's body can be found in assets/js/demos.js
+            md.initDashboardPageCharts();
+            if (window_width > 767) {
+                if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                    $('.fixed-plugin .dropdown').addClass('show');
+                    $('.fixed-plugin .dropdown-menu').addClass('show');
+                }
+            }
+            $('#myTable').DataTable();
+
+            getLeaderBoardData();
+
+            var panels = $('.vote-results');
+            var panelsButton = $('.dropdown-results');
+            panels.hide();
+
+            //Click dropdown
+            panelsButton.click(function () {
+                //get data-for attribute
+                var dataFor = $(this).attr('data-for');
+                var idFor = $(dataFor);
+
+                //current button
+                var currentButton = $(this);
+                idFor.slideToggle(400, function () {
+                    //Completed slidetoggle
+                    if (idFor.is(':visible')) {
+                        currentButton.html('Hide Results');
+                    }
+                    else {
+                        currentButton.html('View Results');
+                    }
+                })
+            });
+        });
+
+        function getLeaderBoardData() {
+
+            var table = document.getElementsByTagName("table")[0];
+            var tbody = table.getElementsByTagName("tbody")[0];
+            var target = '#leaderTbody';
+
+            tbody.onclick = function (e) {
+                e = e || window.event;
+                var data = [];
+                var target = e.srcElement || e.target;
+                while (target && target.nodeName !== "TR") {
+                    target = target.parentNode;
+                }
+
+
+                var $editleaderDiv = $(
+                    '<div class="modal" tabindex="-1" role="dialog">' +
+                    '<div class="modal-dialog" role="document" >' +
+                    '<div class="modal-content">' +
+                    '<div class="modal-header">' +
+                    '<h5 class="modal-title">Your Vote Is Your Voice</h5>' +
+                    '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+                    '<span aria-hidden="true">&times;</span>' +
+                    '</button>' +
+                    '</div>' +
+                    '<div class="modal-body">' +
+                    '<div class="col-lg-12 col-md-12">' +
+                    '<div class="card">' +
+                    '<div class="card-header card-header-tabs card-header-primary">' +
+                    '<div class="nav-tabs-navigation">' +
+                    '<div class="nav-tabs-wrapper">' +
+                    '<span class="nav-tabs-title">Nominee Info:</span>' +
+                    '<ul class="nav nav-tabs" data-tabs="tabs">' +
+                    '<li class="nav-item">' +
+                    '<a class="nav-link active" href="#test1" data-toggle="tab">' +
+                    '<i class="material-icons">bug_report</i> Hollardite Value' +
+                    '<div class="ripple-container"></div>' +
+                    '</a>' +
+                    '</li>' +
+                    '<li class="nav-item">' +
+                    '<a class="nav-link" href="#test2" data-toggle="tab">' +
+                    '<i class="material-icons">code</i> Written Nomination Message' +
+                    '<div class="ripple-container"></div>' +
+                    '</a>' +
+                    '</li>' +
+                    '<li class="nav-item">' +
+                    '<a class="nav-link" href="#test3" data-toggle="tab">' +
+                    '<i class="material-icons">cloud</i> Uploaded Docs' +
+                    '<div class="ripple-container"></div>' +
+                    '</a>' +
+                    '</li>' +
+                    '</ul>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+
+
+                    '<div class="card-body">' +
+                    '<div class="tab-content">' +
+
+                    '<div class="tab-pane active" id="test1">' +
+                    '<table class="table">' +
+                    '<tbody>' +
+                    '<tr>' +
+
+                    '<td>Create test1 Invisible User Experiences you Never Knew About</td>' +
+                    '<td class="td-actions text-right">' +
+                    '<button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">' +
+                    '<i class="material-icons">edit</i>' +
+                    '</button>' +
+                    '<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">' +
+                    '<i class="material-icons">close</i>' +
+                    '</button>' +
+                    '</td>' +
+                    '</tr>' +
+                    '</tbody>' +
+                    '</table>' +
+                    '</div>' +
+
+
+                    '<div class="tab-pane " id="test2">' +
+                    '<table class="table">' +
+                    '<tbody>' +
+                    '<tr>' +
+
+                    '<td>Create test2 Invisible User Experiences you Never Knew About</td>' +
+                    '<td class="td-actions text-right">' +
+                    '<button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">' +
+                    '<i class="material-icons">edit</i>' +
+                    '</button>' +
+                    '<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">' +
+                    '<i class="material-icons">close</i>' +
+                    '</button>' +
+                    '</td>' +
+                    '</tr>' +
+                    '</tbody>' +
+                    '</table>' +
+                    '</div>' +
+
+                    '<div class="tab-pane " id="test3">' +
+                    '<table class="table">' +
+                    '<tbody>' +
+                    '<tr>' +
+
+                    '<td>Create test3 Invisible User Experiences you Never Knew About</td>' +
+                    '<td class="td-actions text-right">' +
+                    '<button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">' +
+                    '<i class="material-icons">edit</i>' +
+                    '</button>' +
+                    '<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">' +
+                    '<i class="material-icons">close</i>' +
+                    '</button>' +
+                    '</td>' +
+                    '</tr>' +
+                    '</tbody>' +
+                    '</table>' +
+                    '</div>' +
+
+
+
+
+
+
+
+
+                    '</div>' +
+                    '</div>' +
+
+
+                    '</div>' +
+                    '</div>' +
+
+
+
+
+
+                    //'<div class="row">'+
+                    //'<div class= "col-md-12" >' +
+                    //'<div class="card">' +
+                    //'<div class="ccard-header card-header-tabs card-header-primary">' +
+                    //'<div class="ct-chart" id="websiteViewsChart"></div>' +
+                    //'</div>' +
+                    //'<div class="card-body">' +
+                    //'<h6 class="card-title">Holladite 1 Nomination Info</h6>' +
+                    ////'<p>Reason For Nomination</p>' +
+                    //'<div class="form-group">'+
+                    //    '<label for="exampleFormControlTextarea1">Example textarea</label>'+
+                    //    '<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>'+
+                    //'</div>'+
+                    //'</div>' +
+                    //'<div class="card-footer">' +
+                    //'<div class="stats">' +
+                    //'<i class="material-icons">directions_run</i><p class="text-primary">Current ranking 500<p>' +
+                    //'</div>' +
+                    //'</div>' +
+                    //'</div>' +
+                    //'</div > ' +
+                    //'</div>' +
+
+                    '<div class="row">'+
+                    '<div class= "col-md-3" >' +
+                    '<div class="radio">' +
+                    '<label>' +
+                    '<input type="radio" name="optionsRadios"> Excellent' +
+                    '</label>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class= "col-md-3" >' +
+                    '<div class="radio">' +
+                    '<label>' +
+                    '<input type="radio" name="optionsRadios"> Well Done' +
+                    '</label>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class= "col-md-3" >' +
+                    '<div class="radio">' +
+                    '<label>' +
+                    '<input type="radio" name="optionsRadios"> Not To Shabby' +
+                    '</label>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    //'<div class="row">'+
+                    //    '<div class="col-lg-12 col-md-12 col-sm-12">'+
+                    //        '<textarea style="resize:vertical;" class="form-control" placeholder="If You Have Time Please Add An Appreciation Message." rows="6" name="comment" required></textarea>'+
+                    //    '</div>'+
+                    //'</div>'+
+
+                    '</div>' +
+                    '<div class="modal-footer">' +
+                    '<button type="button" class="btn btn-success btn-vote">Submit Vote!</button>' +
+                    '<button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>' +
+                    '</div>' +
+
+
+
+
+
+                    '</div>' +
+                    '</div>' +
+                    '</div>'
+                );
+                var table = $('#myTable').DataTable();
+                if (table.data().count()) {
+                    $editleaderDiv.modal();
+                }
+            };
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+"Employees" : [
+{
+"userId":"mparak",
+"jobTitleName":"Developer",
+"firstName":"Mohammed",
+"lastName":"Parak",
+"preferredFullName":"Mohammed Parak",
+"employeeCode":"Holy1",
+"region":"Gauteng Parktown",
+"phoneNumber":"011 374 2266",
+"emailAddress":"mzparak@hollard.co.za"
+},
+{
+"userId":"gcloster",
+"jobTitleName":"Developer",
+"firstName":"Grant",
+"lastName":"Closter",
+"preferredFullName":"Grant Closter",
+"employeeCode":"Holy2",
+"region":"WesternCape Bellville",
+"phoneNumber":"011 374 2266",
+"emailAddress":"gcloster@hollard.co.za"
+},
+{
+"userId":"jleonard",
+"jobTitleName":"Developer",
+"firstName":"Justin",
+"lastName":"Leonard",
+"preferredFullName":"Justin Leonardk",
+"employeeCode":"Holy3",
+"region":"Gauteng Parktown",
+"phoneNumber":"011 374 2266",
+"emailAddress":"jl@gmail@hollard.co.za"
+}
+]
+}

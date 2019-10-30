@@ -1,0 +1,520 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="wiz_assets/img/favicon.png" />
+	<title>Paper Bootstrap Wizard by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<!-- CSS Files -->
+    <link href="wiz_assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="wiz_assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="wiz_assets/css/demo.css" rel="stylesheet" />
+
+	<!-- Fonts and Icons -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link href="wiz_assets/css/themify-icons.css" rel="stylesheet">
+    <style>
+        .rating-header {
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="image-container set-full-height" style="background-image: url('wiz_assets/img/HollardValues.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                    <div class="wizard-container">
+                        <div class="card wizard-card" data-color="red" id="wizard">
+                            <form action="" method="">
+                                <!--        You can switch " data-color="azure" "  with one of the next bright colors: "blue", "green", "orange", "red"           -->
+                                <div class="wizard-header">
+                                    <h3 class="wizard-title">Nominate A Holladite</h3>
+                                    <p class="category">We are what we repeatedly do. Excellence, then, is not an act, but a habit</p>
+                                </div>
+                                <div class="wizard-navigation">
+                                    <div class="progress-with-circle">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 21%;"></div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#details" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-list"></i>
+                                                </div>
+                                                Employee Details
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#captain" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-briefcase"></i>
+                                                </div>
+                                                Values
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#description" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-pencil"></i>
+                                                </div>
+                                                Write Up
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="details">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h5 class="info-text"> Let's start with the holladite details</h5>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
+                                                    <label>Holladite Name</label>
+                                                    <select class="form-control" id="HolUserNames"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="card card-chart">
+                                                    <div class="card-header card-header-warning">
+                                                        <div class="ct-chart" id="websiteViewsChart"></div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Hollodite Status</h4>
+                                                        <p class="text-primary" id="branch"></p>
+                                                        <p class="text-primary" id="email"></p>
+                                                        <p class="text-primary" id="telephoneNo"></p>
+                                                        <p class="text-primary" id="skills"></p>
+
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="stats">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="captain">
+                                        <h5 class="info-text">Which Values Does Your Nominee Uphold </h5>
+                                        <div class="row">
+                                            <div class="col-sm-14 ">
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="growth">
+                                                        <input type="checkbox" name="growth"  id="growthChK">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-time"></i>
+                                                            <p>Growth</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="partnering">
+                                                        <input type="checkbox" name="partnering"  id="partneringChk">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-calendar"></i>
+                                                            <p>Partnering</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="care">
+                                                        <input type="checkbox" name="care" id="careChk">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-time"></i>
+                                                            <p>Care And Dignity</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="favIns">
+                                                        <input type="checkbox" name="favIns" value="Design" id="favInsChk">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-calendar"></i>
+                                                            <p>Favourite Insurer</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="betWay" >
+                                                        <input type="checkbox" name="betWay" id="betWayChK">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-calendar"></i>
+                                                            <p>Better Way</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="choice" data-toggle="wizard-checkbox" id="endure">
+                                                        <input type="checkbox" name="endure" value="Design" id="endureChk">
+                                                        <div class="card card-checkboxes card-hover-effect">
+                                                            <i class="ti-time"></i>
+                                                            <p>Enduring</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="description">
+                                        <div class="row">
+                                            <h5 class="info-text"> Tell us about your ideal working space. </h5>
+                                            <div class="col-sm-6 col-sm-offset-1">
+                                                <div class="form-group">
+                                                    <label>Desk description</label>
+                                                    <textarea class="form-control" placeholder="" rows="9"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Example</label>
+                                                    <p class="description">"If you're heavily armed with a mug, smartphone and a laptop, then our hot desks will provide the pure functionality and space needed to get your work done and move on to the next one."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+                                        <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' id="btnFinish" />
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- wizard container -->
+                </div>
+            </div> <!-- row -->
+        </div> <!--  big container -->
+        <div class="footer">
+            <div class="container text-center">
+               
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="valueRatingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control animated" cols="50" id="valueReason" placeholder="Enter Your Value reason" rows="5" ></textarea>
+                    <div class="form-group" id="rating-ability-wrapper">
+                        <label class="control-label" for="rating">
+                            <span class="field-label-header">How Would You Like To Rate This Value</span><br>
+                            <!--<span class="field-label-info"></span>-->
+                            <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+                        </label>
+                        <h2 class="bold rating-header" style="">
+                            <span class="selected-rating">0</span><small> / 5</small>
+                        </h2>
+                        <button type="button" class="btnrating btn btn-default btn-sm" data-attr="1" id="rating-star-1">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btnrating btn btn-default btn-sm" data-attr="2" id="rating-star-2">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btnrating btn btn-default btn-sm" data-attr="3" id="rating-star-3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btnrating btn btn-default btn-sm" data-attr="4" id="rating-star-4">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btnrating btn btn-default btn-sm" data-attr="5" id="rating-star-5">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnValueSubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="wiz_assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="wiz_assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="wiz_assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="wiz_assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="wiz_assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+
+<script>
+    var userData;
+
+    var values;
+    //var value;
+    var growth;
+    var partnering;
+    var careAndDignity;
+    var favouriteInsurer;
+    var betterWay;
+    var enduring;
+
+    var writeUp;
+
+    var Nomination;
+
+    $(document).ready(function () {
+        init();
+        $("#HolUserNames").change(function () {
+            var userId = $('#HolUserNames').val();
+
+            for (let i = 0; i < userData.length; i++)  {
+                if (userData[i].id == userId) {
+                    $("#branch").text("Branch: " + userData[i].province);
+                    $("#skills").text("Job Title: " + userData[i].jobTitle);
+                    $("#email").text("Email: " + userData[i].emailAdd);
+                    $("#telephoneNo").text("Tel: " + userData[i].phoneNo);
+                }
+            }
+        });   
+
+        $('#growth').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Growth");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $('#partnering').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Partnering");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $('#care').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Care And Dignity");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $('#favIns').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Favourite Insurer");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $('#betWay').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Better Way");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $('#endure').click(function () {
+            if ($(this).hasClass('active')) {
+                $('#valueRatingModal').modal('show');
+                $('#myModalLabel').text("Enduring");
+            }
+            else {
+                $('#valueRatingModal').modal('hide');
+            }
+        });
+
+        $("#btnValueSubmit").on('click', (function (e) {
+            var value = $('#myModalLabel').text();
+            var valueReason = $('#valueReason').val();
+            var valueRating = $('#selected_rating').val();
+            growth = {
+                "value": value,
+                "Rating": valueRating,
+                "Reason": valueReason
+            };
+
+        }));
+
+        $("#btnFinish").on('click', (function (e) {
+
+            //user info var declarations
+            var userId;
+            var jobTitleName;
+            var firstName;
+            var lastName;
+            var preferredFullName;
+            var employeeCode;
+            var region;
+            var phoneNumber;
+            var emailAddress;
+
+            // getUserdata by userid
+            var userId = $('#HolUserNames').val();
+            for (let i = 0; i < userData.Employees.length; i++) {
+                if (userData.Employees[i].firstName == userId) {
+                    var userId = userData.Employees[i].region;
+                    var jobTitleName = userData.Employees[i].jobTitleName;
+                    var firstName = userData.Employees[i].firstName;
+                    var lastName = userData.Employees[i].lastName;
+                    var preferredFullName = userData.Employees[i].preferredFullName;
+                    var employeeCode = userData.Employees[i].employeeCode;
+                    var region = userData.Employees[i].region;
+                    var phoneNumber = userData.Employees[i].phoneNumber;
+                    var emailAddress = userData.Employees[i].emailAddress;
+                }
+            }
+
+            values = [];
+           
+            if (growth != null || growth != "undefined") {
+                values.push(growth);
+            }
+            if (careAndDignity != null || careAndDignity != undefined) {
+                values.push(careAndDignity);
+            }
+            if (partnering != null || partnering != undefined) {
+                values.push(partnering);
+            }
+            if (favouriteInsurer != null || favouriteInsurer != undefined) {
+                values.push(favouriteInsurer);
+            }
+            if (betterWay != null || betterWay != undefined) {
+                values.push(betterWay);
+            }
+            if (enduring != null || enduring != undefined) {
+                values.push(enduring);
+            }
+
+          
+
+            //build Nomination object
+            Nomination = {
+                "userId": userId,
+                "jobTitleName": jobTitleName,
+                "firstName": firstName,
+                "lastName": lastName,
+                "preferredFullName": preferredFullName,
+                "employeeCode": employeeCode,
+                "region": region,
+                "phoneNumber": phoneNumber,
+                "emailAddress": emailAddress, 
+                "values":[
+                    values
+                   
+                ]
+            };
+            var jsonNomination = JSON.stringify(Nomination);
+            alert(jsonNomination);
+
+        }));
+
+
+        $(".btnrating").on('click', (function (e) {
+
+            var previous_value = $("#selected_rating").val();
+
+            var selected_value = $(this).attr("data-attr");
+            $("#selected_rating").val(selected_value);
+
+            $(".selected-rating").empty();
+            $(".selected-rating").html(selected_value);
+
+            for (i = 1; i <= selected_value; ++i) {
+                $("#rating-star-" + i).toggleClass('btn-warning');
+                $("#rating-star-" + i).toggleClass('btn-default');
+            }
+
+            for (ix = 1; ix <= previous_value; ++ix) {
+                $("#rating-star-" + ix).toggleClass('btn-warning');
+                $("#rating-star-" + ix).toggleClass('btn-default');
+            }
+
+        }));
+
+
+
+    });
+    function init() {
+        loadJSON(function (response) {
+            // Parse JSON string into object
+            var userNames = JSON.parse(response);
+            if (userNames != null) {
+                userData = userNames;
+                populateUserNameDropdown(userNames);
+            }
+        });
+    }
+    
+    function loadJSON(callback) {
+
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', 'http://localhost/AWS/getUsers?AWS/getUsers?', false); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+
+    function populateUserNameDropdown(data) {
+        $.each(data, function (i, option) {
+            //$('#HolUserNames').append($('<option/>').attr("value", option.userId).text(option.firstName));
+            let dropdown = document.getElementById('HolUserNames');
+            dropdown.length = 0;
+
+            let defaultOption = document.createElement('option');
+            defaultOption.text = 'Please Select';
+
+            dropdown.add(defaultOption);
+            dropdown.selectedIndex = 0;
+            for (let i = 0; i < data.length; i++) {
+                option = document.createElement('option');
+                option.text = data[i].userName;
+                option.value = data[i].id;
+                dropdown.add(option);
+            }    
+        });
+    }
+</script>
+
+
+</html>

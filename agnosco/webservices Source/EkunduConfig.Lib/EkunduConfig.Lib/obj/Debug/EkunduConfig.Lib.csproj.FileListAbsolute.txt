@@ -1,0 +1,10 @@
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\obj\Debug\EkunduConfig.Lib.csprojAssemblyReference.cache
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\obj\Debug\EkunduConfig.Lib.csproj.CoreCompileInputs.cache
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\bin\Debug\EkunduConfig.Lib.dll
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\bin\Debug\EkunduConfig.Lib.pdb
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\bin\Debug\System.Collections.Immutable.dll
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\obj\Debug\EkunduConfig.Lib.csproj.CopyComplete
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\obj\Debug\EkunduConfig.Lib.dll
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\obj\Debug\EkunduConfig.Lib.pdb
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\bin\Debug\Newtonsoft.Json.dll
+c:\users\mohamedp\source\repos\EkunduConfig.Lib\EkunduConfig.Lib\bin\Debug\Newtonsoft.Json.xml

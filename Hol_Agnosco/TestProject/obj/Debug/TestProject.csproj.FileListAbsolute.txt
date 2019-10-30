@@ -1,0 +1,12 @@
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\TestProject.exe.config
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\TestProject.exe
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\TestProject.pdb
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\AgnoscoLib.dll
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\Newtonsoft.Json.dll
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\AgnoscoLib.pdb
+C:\Hackathon\Hol_Agnosco\TestProject\bin\Debug\Newtonsoft.Json.xml
+C:\Hackathon\Hol_Agnosco\TestProject\obj\Debug\TestProject.csprojAssemblyReference.cache
+C:\Hackathon\Hol_Agnosco\TestProject\obj\Debug\TestProject.csproj.CoreCompileInputs.cache
+C:\Hackathon\Hol_Agnosco\TestProject\obj\Debug\TestProject.csproj.CopyComplete
+C:\Hackathon\Hol_Agnosco\TestProject\obj\Debug\TestProject.exe
+C:\Hackathon\Hol_Agnosco\TestProject\obj\Debug\TestProject.pdb
